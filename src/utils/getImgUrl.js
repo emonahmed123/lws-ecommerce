@@ -3,9 +3,12 @@
 
 
 
-const getImgUrl = (imagePath) => {
-    return new URL(`../assets/img/${imagePath}`, import.meta.url).href;
-};
+function getImgUrl(name) {
+
+    return new URL(`../assets/img/${name}`, import.meta.url).href
+}
 
 export { getImgUrl };
+
+
 // Example usage:       

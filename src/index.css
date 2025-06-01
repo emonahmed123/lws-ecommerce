@@ -2,4 +2,6 @@
 
 @theme{
     --font-sans: 'Satoshi', sans-serif
+    --color-shop-black: '#000000',
+    --color-shop-red: '#FF3333',
 }
