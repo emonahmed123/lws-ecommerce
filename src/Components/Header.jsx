@@ -1,9 +1,12 @@
+import { useCart } from "../context/CartContext";
 import AnnouncementBar from "./AnnouncementBar";
 import Cart from "./Cart";
 import Search from "./Svg/Search";
 import User from "./Svg/User";
 
 const Header = () => {
+  const { state, dispatch } = useCart();
+
   return (
     <>
       <AnnouncementBar />
@@ -32,6 +35,10 @@ const Header = () => {
             <div className="relative hidden md:block w-64">
               <input
                 type="text"
+                value={state.searchTerm}
+                onChange={(e) =>
+                  dispatch({ type: "SET_SEARCH_TERM", payload: e.target.value })
+                }
                 placeholder="Search for products..."
                 className="w-full bg-gray-100 rounded-full py-2 px-4 text-sm"
               />

@@ -32,7 +32,7 @@ export const productData = [
         price: 120,
         currentStock: 8,
         image: "image-seven-one.png",
-        rating: 3,
+        rating: 5,
         color: "blue",
         size: "L",
         popularity: 92,

@@ -59,7 +59,16 @@ export const cartReducer = (state, action) => {
                     product.id === action.payload ? { ...product, currentStock: product.currentStock + 1 } : product,
                 ),
             }
-
+        case "SET_SORT_BY":
+            return {
+                ...state,
+                sortBy: action.payload,
+            }
+        case "SET_SEARCH_TERM":
+            return {
+                ...state,
+                searchTerm: action.payload,
+            }
 
 
         default
