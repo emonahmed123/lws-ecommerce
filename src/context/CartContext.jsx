@@ -29,3 +29,8 @@ export const useProducts = () => {
   const { state } = useContext(CartContext);
   return state.products;
 };
+
+export const useCartItems = () => {
+  const { state } = useContext(CartContext);
+  return state.cartItems;
+};
