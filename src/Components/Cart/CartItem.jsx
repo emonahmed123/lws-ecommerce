@@ -1,5 +1,5 @@
 import { useCart, useProducts } from "../../context/CartContext";
-import { getImgUrl } from "../../utils/getimgUrl";
+import { getImgUrl } from "../../utils/getImgUrl";
 
 const CartItem = ({ item }) => {
   const { dispatch } = useCart();
